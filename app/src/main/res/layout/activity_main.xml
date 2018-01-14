@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onrsClick"
+        android:src="@mipmap/rs"
+        android:layout_above="@+id/TextView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rumah Sakit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/TextView2"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_alignStart="@+id/imageButton1" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnAboutClick"
+        android:src="@mipmap/about"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ratih Ningtiyas"
+        android:layout_below="@+id/imageButton2"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:layout_toEndOf="@+id/imageButton1" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:onClick="onExitClick"
+        android:src="@mipmap/exit"
+        android:layout_above="@+id/textView3"
+        android:layout_toRightOf="@+id/TextView1"
+        android:layout_toEndOf="@+id/TextView1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E X I T"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:layout_toEndOf="@+id/imageButton1"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="47dp" />
+
+
+</RelativeLayout>
